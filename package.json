@@ -1,0 +1,26 @@
+{
+  "name": "eventsapp-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prSathan/EventsApp-NodeBackend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/prSathan/EventsApp-NodeBackend/issues"
+  },
+  "homepage": "https://github.com/prSathan/EventsApp-NodeBackend#readme",
+  "devDependencies": {
+    "nodemon": "^1.12.1"
+  },
+  "dependencies": {
+    "express": "^4.15.4"
+  }
+}
