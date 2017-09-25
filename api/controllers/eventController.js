@@ -21,3 +21,12 @@ exports.listEvents = function (req, res) {
     res.json(event)
   })
 }
+
+exports.readEvent = function (req, res) {
+
+  Event.findById(req.params.eventId, function (err, event) {
+    if (err)
+    res.send(err)
+    res.json(event)
+  })
+}
