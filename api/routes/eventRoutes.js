@@ -6,4 +6,7 @@ module.exports = function(app){
   .get(event.listEvents)
   .post(event.createEvent)
 
+  app.route('events/:eventId')
+  .get(event.readEvent)
+
 }
