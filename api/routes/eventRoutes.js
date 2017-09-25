@@ -3,6 +3,7 @@ module.exports = function(app){
 
 
   app.route('/events')
+  .get(event.listEvents)
   .post(event.createEvent)
 
 }
