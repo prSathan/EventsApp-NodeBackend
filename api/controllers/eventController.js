@@ -12,3 +12,12 @@ exports.createEvent = function (req, res) {
     res.json(event)
   })
 }
+
+exports.listEvents = function (req, res) {
+
+  Event.find({}, function (err, event) {
+    if (err)
+    res.send(err)
+    res.json(event)
+  })
+}
