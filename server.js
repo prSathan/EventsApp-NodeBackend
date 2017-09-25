@@ -1,6 +1,18 @@
-var express = require('express')
-var app = express()
-port = process.env.PORT || 3000
+var express = require('express'),
+    app = express(),
+    port = process.env.PORT || 3000,
+    mongoose = require('mongoose'),
+    Event = require('./api/models/eventModel'),
+    bodyParser = require('body-parser');
+
+mongoose.Promise = global.Promise;
+mongoose.connect('mongodb://test:test@ds159963.mlab.com:59963/events');
+
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
+
+var routes = require('./api/routes/eventRoutes');
+routes(app);
 
 app.listen(port);
-console.log('EventsApp started on: ' + port)
+console.log('user List started on:' + port);
