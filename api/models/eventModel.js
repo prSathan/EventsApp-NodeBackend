@@ -7,11 +7,11 @@ var EventSchema = new Schema({
     Required: 'Please enter'
   },
   date_from: {
-    type: Date,
+    type: String,
     Required: 'Please enter'
   },
   date_to: {
-    type: Date,
+    type: String,
     Required: 'Please enter'
   },
   location: {
