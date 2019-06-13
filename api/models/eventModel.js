@@ -6,11 +6,11 @@ var EventSchema = new Schema({
     type: String,
     Required: 'Please enter'
   },
-  date_from: {
+  date: {
     type: String,
     Required: 'Please enter'
   },
-  date_to: {
+  time: {
     type: String,
     Required: 'Please enter'
   },
